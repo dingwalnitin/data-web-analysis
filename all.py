@@ -377,4 +377,4 @@ if __name__ == '__main__':
     app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
         '/uploads': app.config['UPLOAD_FOLDER']
     })
-    run_simple('127.0.0.1', 5231, app, use_reloader=True, threaded=True)
+    run_simple('0.0.0.0', 5231, app, use_reloader=True, threaded=True)
